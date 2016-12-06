@@ -1,0 +1,3 @@
+Sometimes data in CSV can contain comma/other characters that will produce unexpected results when read.  If you face such issue, you can use this regular expression on the line read.
+
+var val = line.split(new RegExp(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/));
